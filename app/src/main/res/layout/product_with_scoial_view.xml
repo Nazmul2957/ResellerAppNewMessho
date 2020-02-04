@@ -1,98 +1,333 @@
-<androidx.cardview.widget.CardView android:id="@+id/cardView8"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView8"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_alignParentTop="true"
     android:layout_centerHorizontal="true"
-    android:foregroundGravity="center"
     android:layout_marginBottom="5dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:foregroundGravity="center">
 
     <LinearLayout
-        android:padding="3dp"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="500dp">
+        android:layout_height="560dp"
+        android:orientation="vertical"
+        android:padding="3dp">
+
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:weightSum="3"
-            android:layout_height="300dp">
+            android:layout_height="300dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
             <ImageView
                 android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:src="@drawable/jewlary"
-                android:layout_height="match_parent">
+                android:src="@drawable/jewlary">
 
             </ImageView>
+
             <LinearLayout
-                android:paddingLeft="3dp"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:weightSum="2"
+                android:layout_height="300dp"
+                android:layout_weight="1"
                 android:orientation="vertical"
-                android:layout_height="300dp">
-                <ImageView
-                    android:paddingBottom="1.5dp"
+                android:paddingLeft="3dp"
+                android:weightSum="2">
+
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:src="@drawable/saree"
                     android:layout_height="0dp"
-                    android:layout_weight="1">
-                </ImageView>
-                <ImageView
-                    android:paddingTop="1.5dp"
-                    android:layout_width="match_parent"
-                    android:src="@drawable/saree"
                     android:layout_weight="1"
-                    android:layout_height="0dp">
-                </ImageView>
+                    android:paddingTop="1.5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/saree"></ImageView>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/favourite_circle_btn_bg"
+                        android:src="@drawable/favourite_blank">
+
+                    </ImageButton>
+                </RelativeLayout>
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="1.5dp"
+                    android:src="@drawable/saree"></ImageView>
 
             </LinearLayout>
 
         </LinearLayout>
+
         <LinearLayout
-            android:padding="10dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="90dp">
 
                 <TextView
                     android:id="@+id/productname"
-                    android:layout_width="wrap_content"
+                    android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:text="White Bella jewellery Sets"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="18sp"
+                    android:textStyle="bold"></TextView>
 
                 <RelativeLayout
-                    android:layout_alignParentRight="true"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
                     android:background="@color/ratingbg"
                     android:gravity="right">
 
                     <TextView
-                        android:textAlignment="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="3.8"
+                        android:textAlignment="center"
                         android:textSize="20sp">
 
                     </TextView>
 
                     <ImageView
-                        android:layout_alignParentRight="true"
                         android:layout_width="20dp"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
                         android:src="@drawable/rating_star">
 
                     </ImageView>
                 </RelativeLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productname"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/product_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Starting from $ 120"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/product_discount_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="$ 205"
+
+                        android:textSize="14sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/product_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="(50% off)"
+                        android:textColor="@color/meeshoColor"
+                        android:textSize="14sp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productname"
+                    android:layout_marginTop="40dp">
+
+                    <TextView
+                        android:id="@+id/product_extra_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Get Extra 50% VIP Membership"
+                        android:textColor="#BF8F00"
+                        android:textSize="14sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
             </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:background="#F5F5F5"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp">
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/shipping_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/shipping"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Shipping $70 $1"
+                        android:textSize="16sp"
+                        ></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#FFF0F6"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp">
+                    <ImageView
+
+                        android:src="@drawable/margin_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:id="@+id/set_margin"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/meeshoColor"
+                        android:layout_height="wrap_content"
+                        android:text="Set Margin"
+                        android:textSize="14sp"
+                        ></TextView>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:src="@drawable/download">
+
+                        </ImageView>
+                        <TextView
+                            android:textAlignment="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="Download">
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:src="@drawable/download">
+
+                        </ImageView>
+                        <TextView
+                            android:textAlignment="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="Facebook">
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:src="@drawable/download">
+
+                        </ImageView>
+                        <TextView
+                            android:textAlignment="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="Others">
+                        </TextView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+
+                    android:padding="15dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/whatsapp_button_background"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+
+                        android:src="@drawable/whatsapp"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:id="@+id/whatsapp"
+                        android:layout_width="wrap_content"
+                        android:textColor="#fff"
+                        android:layout_height="wrap_content"
+                        android:text="SHARE NOW"
+                        android:textSize="18sp"
+                        ></TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
         </LinearLayout>
 
 
