@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ResellerAppNewMessho</string>
+    <string name="action_settings">Settings</string>
+    <string name="signup">Enter your mobile number</string>
+    <string name="signup1">We need to text you the OTP to authenticate your account</string>
+    <string name="signup2">By continuing,you accept the Privacy Policy and Terms of Service.An SMS may be sent to you with the OTP to verify your number.SMS and data rates may apply.</string>
+    <string name="spashscreen">Bangladesh #1 Reseller app</string>
+    <string name="spashscreen1">Trusted by 1 Crore+ Resellers across Bangladesh</string>
+    <string name="otp">Verifying your number!</string>
+    <string name="otp1">We have sent an OTP on your number</string>
+    <string name="otp2">Resend OTP in 59s</string>
+    <string name="otp3">Did not receive OTP? Change Number</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="cataloges">Showing All Cataloges</string>
+    <string name="orderpage">Get 15 orders delivered within 30 days to become a VIP</string>
+
+    <string-array name="country_names">Country Names
+        <item> Afghanistan </item>
+        <item> Albania </item>
+        <item>Bangladesh </item>
+        <item> Bhutan </item>
+        <item> Canada </item>
+        <item> Denamrk </item>
+        <item> England </item>
+        <item> India </item>
+        <item> Pakistan </item>
+    </string-array>
+
+</resources>

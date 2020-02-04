@@ -1,0 +1,158 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView8"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="5dp"
+    android:foregroundGravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:src="@drawable/jewlary">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="3dp"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="1.5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/saree"></ImageView>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/favourite_circle_btn_bg"
+                        android:src="@drawable/favourite_blank">
+
+                    </ImageButton>
+                </RelativeLayout>
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="1.5dp"
+                    android:src="@drawable/saree"></ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:id="@+id/productname"
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:text="White Bella jewellery Sets"
+                    android:textSize="18sp"
+                    android:textStyle="bold"></TextView>
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/ratingbg"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.8"
+                        android:textAlignment="center"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/rating_star">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/productname"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/product_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Starting from $ 120"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/product_discount_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$ 205"
+
+                        android:textSize="14sp"></TextView>
+
+                    <TextView
+                        android:layout_marginLeft="3dp"
+                        android:id="@+id/product_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/meeshoColor"
+                        android:text="(50% off)"
+                        android:textSize="14sp"></TextView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

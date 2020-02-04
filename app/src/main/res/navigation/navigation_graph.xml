@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/home3">
+
+    <fragment
+        android:id="@+id/collections"
+        android:name="com.example.resellerappnewmessho.fragment.Collections"
+        android:label="fragment_collections"
+        tools:layout="@layout/fragment_collections" />
+    <fragment
+        android:id="@+id/order"
+        android:name="com.example.resellerappnewmessho.fragment.Order"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" />
+    <fragment
+        android:id="@+id/home3"
+        android:name="com.example.resellerappnewmessho.fragment.Home"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" />
+    <fragment
+        android:id="@+id/account"
+        android:name="com.example.resellerappnewmessho.fragment.Account"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/help"
+        android:name="com.example.resellerappnewmessho.fragment.Help"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+</navigation>
