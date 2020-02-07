@@ -30,4 +30,9 @@
         android:name="com.example.resellerappnewmessho.fragment.Help"
         android:label="fragment_help"
         tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/products_Details_Fragments"
+        android:name="com.example.resellerappnewmessho.Products_Details_Fragments"
+        android:label="fragment_products__details__fragments"
+        tools:layout="@layout/fragment_products__details__fragments" />
 </navigation>
