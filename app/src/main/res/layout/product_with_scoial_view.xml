@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_alignParentTop="true"
     android:layout_centerHorizontal="true"
-    android:layout_marginBottom="5dp"
+    android:layout_marginBottom="10dp"
     android:foregroundGravity="center">
 
     <LinearLayout
@@ -95,14 +95,14 @@
 
                 <RelativeLayout
 
-                    android:layout_width="45dp"
+                    android:layout_width="40dp"
                     android:layout_height="20dp"
                     android:layout_alignParentRight="true"
                     android:background="@color/ratingbg"
                     android:gravity="right">
 
                     <TextView
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="2dp"
                         android:gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"

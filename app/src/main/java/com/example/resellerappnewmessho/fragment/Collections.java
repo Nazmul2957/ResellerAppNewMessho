@@ -50,15 +50,15 @@ public class Collections extends Fragment {
                 "R.drawable.saree",
                 "R.drawable.saree",
                 "White Bella jewellery Sets",
-                 "20",
-                "45"
+                 "Starting from $ 20",
+                "Shipping $70 $1"
                 );
         ProductModelR p2=new ProductModelR("R.drawable.jewlary",
                 "R.drawable.jewlary",
                 "R.drawable.jewlary",
                 "jewlary",
-                "770",
-                "45"
+                "Starting from $ 20",
+                "Shipping $70 $1"
         );
   List<ProductModelR> datalist= new ArrayList<>();
   datalist.add(p1);
