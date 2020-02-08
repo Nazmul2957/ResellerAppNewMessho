@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgcolor"
-
     android:orientation="vertical">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -64,7 +63,6 @@
                         android:layout_alignParentRight="true"
                         android:layout_marginEnd="105dp"
                         android:layout_marginRight="105dp"
-
                         android:src="@drawable/headermapicon" />
 
                     <ImageView

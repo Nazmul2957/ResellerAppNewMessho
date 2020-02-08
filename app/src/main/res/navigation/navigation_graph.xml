@@ -35,4 +35,9 @@
         android:name="com.example.resellerappnewmessho.Products_Details_Fragments"
         android:label="fragment_products__details__fragments"
         tools:layout="@layout/fragment_products__details__fragments" />
+    <fragment
+        android:id="@+id/cart_Fragment"
+        android:name="com.example.resellerappnewmessho.Cart_Fragment"
+        android:label="fragment_cart_"
+        tools:layout="@layout/fragment_cart_" />
 </navigation>
