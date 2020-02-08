@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="560dp"
+        android:layout_height="550dp"
         android:orientation="vertical"
         android:padding="3dp">
 
@@ -94,23 +94,27 @@
                     android:textStyle="bold"></TextView>
 
                 <RelativeLayout
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
+
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
                     android:layout_alignParentRight="true"
                     android:background="@color/ratingbg"
                     android:gravity="right">
 
                     <TextView
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:text="3.8"
                         android:textAlignment="center"
-                        android:textSize="20sp">
+                        android:textSize="15sp">
 
                     </TextView>
 
                     <ImageView
-                        android:layout_width="20dp"
+
+                        android:layout_width="15dp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:src="@drawable/rating_star">
@@ -163,7 +167,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
-                        android:text="Get Extra 50% VIP Membership"
+                        android:text="Get extra 50% off with VIP membership"
                         android:textColor="#BF8F00"
                         android:textSize="14sp"
                         android:textStyle="bold"></TextView>
@@ -179,7 +183,7 @@
                 <LinearLayout
                     android:background="#F5F5F5"
                     android:orientation="horizontal"
-                    android:layout_width="wrap_content"
+                    android:layout_width="170dp"
                     android:layout_height="30dp">
                     <ImageView
                         android:layout_marginLeft="10dp"
@@ -189,10 +193,11 @@
 
                     </ImageView>
                     <TextView
+
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:id="@+id/shipping_price"
-                        android:layout_width="120dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Shipping $70 $1"
                         android:textSize="16sp"
@@ -227,21 +232,24 @@
             <RelativeLayout
                 android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
 
                     android:orientation="horizontal"
-                    android:layout_width="wrap_content"
+                    android:layout_width="170dp"
+                    android:weightSum="3"
                     android:layout_height="wrap_content">
                     <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:orientation="vertical"
-                        android:layout_width="wrap_content"
+
                         android:layout_height="match_parent">
                         <ImageView
                             android:layout_width="wrap_content"
-                            android:layout_height="35dp"
+                            android:layout_height="25dp"
                             android:src="@drawable/download">
 
                         </ImageView>
@@ -250,7 +258,7 @@
                             android:layout_marginTop="5dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="14sp"
+                            android:textSize="10sp"
                             android:text="Download">
                         </TextView>
 
@@ -258,11 +266,12 @@
                     <LinearLayout
                         android:layout_marginLeft="8dp"
                         android:orientation="vertical"
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent">
                         <ImageView
                             android:layout_width="wrap_content"
-                            android:layout_height="35dp"
+                            android:layout_height="25dp"
                             android:src="@drawable/download">
 
                         </ImageView>
@@ -271,7 +280,7 @@
                             android:layout_marginTop="5dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="14sp"
+                            android:textSize="10sp"
                             android:text="Facebook">
                         </TextView>
 
@@ -279,11 +288,12 @@
                     <LinearLayout
                         android:layout_marginLeft="8dp"
                         android:orientation="vertical"
-                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent">
                         <ImageView
                             android:layout_width="wrap_content"
-                            android:layout_height="35dp"
+                            android:layout_height="25dp"
                             android:src="@drawable/download">
 
                         </ImageView>
@@ -292,7 +302,7 @@
                             android:layout_marginTop="5dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="14sp"
+                            android:textSize="10sp"
                             android:text="Others">
                         </TextView>
 
@@ -305,12 +315,12 @@
 
                 <LinearLayout
 
-                    android:padding="15dp"
+                    android:padding="10dp"
                     android:layout_alignParentRight="true"
                     android:background="@drawable/whatsapp_button_background"
                     android:orientation="horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="match_parent">
                     <ImageView
 
                         android:src="@drawable/whatsapp"
@@ -326,7 +336,7 @@
                         android:textColor="#fff"
                         android:layout_height="wrap_content"
                         android:text="SHARE NOW"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         ></TextView>
                 </LinearLayout>
             </RelativeLayout>

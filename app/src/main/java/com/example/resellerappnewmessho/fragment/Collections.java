@@ -49,7 +49,7 @@ public class Collections extends Fragment {
         ProductModelR p1=new ProductModelR("R.drawable.saree",
                 "R.drawable.saree",
                 "R.drawable.saree",
-                "Saree",
+                "White Bella jewellery Sets",
                  "20",
                 "45"
                 );
