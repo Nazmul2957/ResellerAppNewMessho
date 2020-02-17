@@ -15,12 +15,12 @@ import com.example.resellerappnewmessho.R;
 
 import java.util.List;
 
-public class RecycleProductSocialview extends RecyclerView.Adapter<RecycleProductSocialview.RecycleViewholder> {
+public class ProductSocialAdapter extends RecyclerView.Adapter<ProductSocialAdapter.RecycleViewholder> {
 
 
 List<ProductModelR> data;
 Context context;
-    public RecycleProductSocialview(Context context, List<ProductModelR> data){
+    public ProductSocialAdapter(Context context, List<ProductModelR> data){
        this.data=data;
        this.context=context;
     }
@@ -28,7 +28,7 @@ Context context;
     @NonNull
     @Override
     public RecycleViewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.product_with_scoial_view,parent,false);
+        View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.sample_product_item_scoial,parent,false);
         return new RecycleViewholder(v);
     }
 
@@ -36,7 +36,7 @@ Context context;
     public void onBindViewHolder(@NonNull RecycleViewholder holder, int position) {
             holder.imageView1.setImageResource(R.drawable.saree);
             holder.imageView2.setImageResource(R.drawable.jewlary);
-            holder.imageView3.setImageResource(R.drawable.kurta);
+            holder.imageView3.setImageResource(R.drawable.saree);
             holder.productname.setText(data.get(position).getProductname());
             holder.shipingcost.setText(data.get(position).getShippingcost());
             holder.startingPrice.setText(data.get(position).getStartingPrice());

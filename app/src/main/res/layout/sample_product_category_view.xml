@@ -1,10 +1,7 @@
 <androidx.cardview.widget.CardView android:id="@+id/cardView8"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentTop="true"
-    android:layout_centerHorizontal="true"
-    android:foregroundGravity="center"
-    android:layout_marginBottom="5dp"
+    android:layout_width="108dp"
+    android:layout_height="170dp"
+    android:layout_marginBottom="10dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
@@ -15,8 +12,9 @@
 
         <ImageView
             android:padding="2dp"
-            android:id="@+id/collectionsimage"
-            android:layout_width="wrap_content"
+            android:id="@+id/collections_image"
+            android:layout_width="108dp"
+            android:scaleType="fitXY"
             android:layout_height="118dp"
             android:src="@drawable/saree" />
 
@@ -33,7 +31,7 @@
 
         </TextView>
         <TextView
-            android:id="@+id/text1"
+            android:id="@+id/collectiontext2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

@@ -17,7 +17,7 @@
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="?attr/actionBarSize"
             app:contentScrim="#FFFFFF"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
             <!--CollapsingToolbar Item Start-->
@@ -142,12 +142,9 @@
                         android:layout_height="wrap_content"
                         android:padding="8dp">
 
-                        <android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            xmlns:app="http://schemas.android.com/apk/res-auto"
-                            xmlns:tools="http://schemas.android.com/tools"
+                        <android.widget.RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            tools:context=".MainActivity">
+                            android:layout_height="match_parent">
 
                             <androidx.cardview.widget.CardView
                                 android:layout_width="match_parent"
@@ -229,486 +226,197 @@
                         </LinearLayout>
                     </LinearLayout>
 
-                    <LinearLayout
+                    <!--  <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:weightSum="3">
+
+                          <LinearLayout
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_marginTop="10dp"
+                              android:layout_weight="1"
+                              android:orientation="vertical"
+                              android:padding="4dp">
+
+                              <androidx.cardview.widget.CardView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content">
+
+                                  <LinearLayout
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="vertical">
+
+                                      <ImageView
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="120dp"
+                                          android:scaleType="fitXY"
+                                          android:src="@drawable/saree" />
+
+                                      <TextView
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="center"
+                                          android:layout_marginTop="3dp"
+                                          android:text="Saree"
+                                          android:textAlignment="center"
+                                          android:textColor="@color/catagorytext"
+                                          android:textSize="16sp">
+
+                                      </TextView>
+
+                                      <TextView
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="center"
+                                          android:text="100 New"
+                                          android:textAlignment="center"
+                                          android:textColor="@color/new_item"
+                                          android:textSize="14sp"></TextView>
+                                  </LinearLayout>
+
+                              </androidx.cardview.widget.CardView>
+                          </LinearLayout>
+
+                          <LinearLayout
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_marginTop="10dp"
+                              android:layout_weight="1"
+                              android:orientation="vertical"
+                              android:padding="4dp">
+
+                              <androidx.cardview.widget.CardView
+
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content">
+
+                                  <LinearLayout
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="vertical">
+
+                                      <ImageView
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="120dp"
+                                          android:scaleType="fitXY"
+                                          android:src="@drawable/saree" />
+
+                                      <TextView
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="center"
+                                          android:layout_marginTop="3dp"
+                                          android:text="Kurta"
+                                          android:textAlignment="center"
+                                          android:textColor="@color/catagorytext"
+                                          android:textSize="16sp">
+
+                                      </TextView>
+
+                                      <TextView
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="center"
+                                          android:text="50 New"
+                                          android:textAlignment="center"
+                                          android:textColor="@color/new_item"
+                                          android:textSize="14sp">
+
+                                      </TextView>
+
+                                  </LinearLayout>
+
+                              </androidx.cardview.widget.CardView>
+                          </LinearLayout>
+
+                          <LinearLayout
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_marginTop="10dp"
+                              android:layout_weight="1"
+                              android:orientation="vertical"
+                              android:padding="4dp">
+
+                              <androidx.cardview.widget.CardView
+
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content">
+
+                                  <LinearLayout
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="vertical">
+
+                                      <ImageView
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="120dp"
+                                          android:scaleType="fitXY"
+                                          android:src="@drawable/saree" />
+
+                                      <TextView
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="center"
+                                          android:layout_marginTop="3dp"
+                                          android:text="Jewlary"
+                                          android:textAlignment="center"
+                                          android:textColor="@color/catagorytext"
+                                          android:textSize="16sp">
+
+                                      </TextView>
+
+                                      <TextView
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="center"
+                                          android:text="200 New"
+                                          android:textAlignment="center"
+                                          android:textColor="@color/new_item"
+                                          android:textSize="14sp">
+
+                                      </TextView>
+
+                                  </LinearLayout>
+
+                              </androidx.cardview.widget.CardView>
+                          </LinearLayout>
+
+                      </LinearLayout>-->
+                    <androidx.recyclerview.widget.RecyclerView
+
+                        android:id="@+id/home_productCategory"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
 
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="4dp">
+                        tools:listitem="@layout/sample_product_category_view"></androidx.recyclerview.widget.RecyclerView>
 
-                            <androidx.cardview.widget.CardView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
+                    <!-- <GridView
+                         android:gravity="center"
+                         android:layout_gravity="center"
+                        android:id="@+id/gridtest"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:columnWidth="108dp"
+                         android:verticalSpacing="10dp"
+                         android:horizontalSpacing="10dp"
+                        android:numColumns="auto_fit"
+                         tools:listitem="@layout/sample_product_category_view">
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
+                     </GridView>-->
 
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="120dp"
-                                        android:scaleType="fitXY"
-                                        android:src="@drawable/saree" />
 
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_marginTop="3dp"
-                                        android:text="Saree"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/catagorytext"
-                                        android:textSize="16sp">
-
-                                    </TextView>
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="100 New"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/new_item"
-                                        android:textSize="14sp"></TextView>
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="4dp">
-
-                            <androidx.cardview.widget.CardView
-
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="120dp"
-                                        android:scaleType="fitXY"
-                                        android:src="@drawable/saree" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_marginTop="3dp"
-                                        android:text="Kurta"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/catagorytext"
-                                        android:textSize="16sp">
-
-                                    </TextView>
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="50 New"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/new_item"
-                                        android:textSize="14sp">
-
-                                    </TextView>
-
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="4dp">
-
-                            <androidx.cardview.widget.CardView
-
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="120dp"
-                                        android:scaleType="fitXY"
-                                        android:src="@drawable/saree" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_marginTop="3dp"
-                                        android:text="Jewlary"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/catagorytext"
-                                        android:textSize="16sp">
-
-                                    </TextView>
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="200 New"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/new_item"
-                                        android:textSize="14sp">
-
-                                    </TextView>
-
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/home_productItem"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="4dp">
-
-                            <androidx.cardview.widget.CardView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="120dp"
-                                        android:scaleType="fitXY"
-                                        android:src="@drawable/saree" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_marginTop="3dp"
-                                        android:text="Saree"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/catagorytext"
-                                        android:textSize="16sp">
-
-                                    </TextView>
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="100 New"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/new_item"
-                                        android:textSize="14sp"></TextView>
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="4dp">
-
-                            <androidx.cardview.widget.CardView
-
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="120dp"
-                                        android:scaleType="fitXY"
-                                        android:src="@drawable/saree" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_marginTop="3dp"
-                                        android:text="Kurta"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/catagorytext"
-                                        android:textSize="16sp">
-
-                                    </TextView>
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="50 New"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/new_item"
-                                        android:textSize="14sp">
-
-                                    </TextView>
-
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="4dp">
-
-                            <androidx.cardview.widget.CardView
-
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="120dp"
-                                        android:scaleType="fitXY"
-                                        android:src="@drawable/saree" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_marginTop="3dp"
-                                        android:text="Jewlary"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/catagorytext"
-                                        android:textSize="16sp">
-
-                                    </TextView>
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="200 New"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/new_item"
-                                        android:textSize="14sp">
-
-                                    </TextView>
-
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="4dp">
-
-                            <androidx.cardview.widget.CardView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="120dp"
-                                        android:scaleType="fitXY"
-                                        android:src="@drawable/saree" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_marginTop="3dp"
-                                        android:text="Saree"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/catagorytext"
-                                        android:textSize="16sp">
-
-                                    </TextView>
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="100 New"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/new_item"
-                                        android:textSize="14sp"></TextView>
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="4dp">
-
-                            <androidx.cardview.widget.CardView
-
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="120dp"
-                                        android:scaleType="fitXY"
-                                        android:src="@drawable/saree" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_marginTop="3dp"
-                                        android:text="Kurta"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/catagorytext"
-                                        android:textSize="16sp">
-
-                                    </TextView>
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="50 New"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/new_item"
-                                        android:textSize="14sp">
-
-                                    </TextView>
-
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="4dp">
-
-                            <androidx.cardview.widget.CardView
-
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="120dp"
-                                        android:scaleType="fitXY"
-                                        android:src="@drawable/saree" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_marginTop="3dp"
-                                        android:text="Jewlary"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/catagorytext"
-                                        android:textSize="16sp">
-
-                                    </TextView>
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:text="200 New"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/new_item"
-                                        android:textSize="14sp">
-
-                                    </TextView>
-
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-                        </LinearLayout>
-
-                    </LinearLayout>
-
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        tools:listitem="@layout/sample_product_item_scoial"></androidx.recyclerview.widget.RecyclerView>
                 </LinearLayout>
 
             </LinearLayout>

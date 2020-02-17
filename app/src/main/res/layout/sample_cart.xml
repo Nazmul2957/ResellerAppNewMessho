@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RadioGroup
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+            <ImageView
+
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/jewlary">
+
+            </ImageView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="15dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:weightSum="6"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+               android:paddingTop="5dp"
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="White Silk Saree"
+                android:textStyle="bold"
+                android:textSize="18dp">
+            </TextView>
+            <TextView
+
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="No Brand,Size:XL,Color:red,Family:White"
+                android:textStyle="bold"
+                android:textSize="18dp">
+            </TextView>
+            <RelativeLayout
+                android:layout_weight="1.5"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:text="$90"
+                    android:textColor="@color/meeshoColor"
+                    android:textSize="18sp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:backgroundTint="#fff"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/add_button">
+
+                    </ImageButton>
+                    <TextView
+                        android:gravity="center"
+                        android:background="@color/bgcolor"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:text="1"
+                        android:textSize="18sp">
+
+                    </TextView>
+                    <ImageButton
+                       android:backgroundTint="#fff"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/minus_button">
+
+                    </ImageButton>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

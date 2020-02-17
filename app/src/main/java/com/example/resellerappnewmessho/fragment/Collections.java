@@ -7,12 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
-import com.example.resellerappnewmessho.Customadapter.RecycleAdapter;
-import com.example.resellerappnewmessho.Customadapter.RecycleProductSocialview;
+import com.example.resellerappnewmessho.Customadapter.ProductCategoryAdapter;
+import com.example.resellerappnewmessho.Customadapter.ProductSocialAdapter;
 import com.example.resellerappnewmessho.Model.ProductModelR;
 import com.example.resellerappnewmessho.R;
 
@@ -39,8 +40,10 @@ public class Collections extends Fragment {
         //category recycle
         catagoryrecycle=v.findViewById(R.id.collection_first_recycler_view);
         catagoryrecycle.setHasFixedSize(true);
-        catagoryrecycle.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
-        RecycleAdapter recycleAdapter=new RecycleAdapter();
+
+        //catagoryrecycle.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
+        catagoryrecycle.setLayoutManager(new GridLayoutManager(getContext(),3,LinearLayoutManager.VERTICAL,false));
+        ProductCategoryAdapter recycleAdapter=new ProductCategoryAdapter();
         catagoryrecycle.setAdapter(recycleAdapter);
 
 
@@ -66,8 +69,9 @@ public class Collections extends Fragment {
  //---------product recycle------
         productrecycle=v.findViewById(R.id.collection_2nd_recycler_view);
         productrecycle.setHasFixedSize(true);
+        productrecycle.setNestedScrollingEnabled(false);
         productrecycle.setLayoutManager(new LinearLayoutManager(getContext()));
-        RecycleProductSocialview productAdaptor=new RecycleProductSocialview(getContext(),datalist);
+        ProductSocialAdapter productAdaptor=new ProductSocialAdapter(getContext(),datalist);
         productrecycle.setAdapter(productAdaptor);
         // Inflate the layout for this fragment
         return v;
